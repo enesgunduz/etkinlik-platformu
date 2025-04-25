@@ -1,0 +1,67 @@
+.event-card {
+  border: 1px solid var(--border-color);
+  background-color: var(--gray-light);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap :15px;
+}
+
+
+.event-card h2 {
+  font-size: var(--font-size-lg);
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.event-details {
+  color: var(--gray-dark);
+  margin-bottom: 15px;
+}
+
+.event-button { 
+  align-self:flex-start ;  
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  font-size: var(--font-size-base);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  color: var(--button-text-primary);
+
+}
+.event-button a{
+  color: var(--button-text-primary);
+  text-decoration: none;
+}
+
+.event-button:hover {
+  opacity: 0.8;
+}
+
+.event-button:active {
+  transform: scale(0.95); /* Butona tıklandığında görsel bir tepki */
+}
+
+.event-card p{
+  font-size: var(--font-size-sm);
+}
+
+.person-img{
+  width:30px ;
+  height:30px;
+  border-radius: 50%;
+}
+.title a{
+  text-decoration: none;
+  color: var(--text-color);
+
+}
+.title:hover{
+  text-decoration: underline;
+}
