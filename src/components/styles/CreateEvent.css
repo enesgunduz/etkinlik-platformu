@@ -1,0 +1,68 @@
+/* Center the form container */
+form {
+  display: flex;
+  flex-direction: column;
+}
+.event-creation-form {
+  padding: 16px ;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap:10px
+}
+h2{
+  font-size: 20px;
+}
+
+form input,
+form textarea,
+form button {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Add styling for form rows */
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Style labels in form rows */
+.form-row label {
+  flex: 1;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Style inputs in form rows */
+.form-row input,
+.form-row textarea {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}

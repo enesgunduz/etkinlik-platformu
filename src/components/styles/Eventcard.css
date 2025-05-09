@@ -18,7 +18,7 @@
   margin-bottom: 10px;
 }
 
-.event-details {
+.event-card-details {
   color: var(--gray-dark);
   margin-bottom: 15px;
 }
@@ -35,6 +35,7 @@
   color: var(--button-text-primary);
 
 }
+
 .event-button a{
   color: var(--button-text-primary);
   text-decoration: none;
@@ -51,7 +52,10 @@
 .event-card p{
   font-size: var(--font-size-sm);
 }
-
+.event-card .title{
+  font-size: var(--font-size-base);
+  font-weight: bold;
+}
 .person-img{
   width:30px ;
   height:30px;
@@ -64,4 +68,8 @@
 }
 .title:hover{
   text-decoration: underline;
+}
+.participant-list{ 
+  display: flex;
+  gap: 5px;
 }

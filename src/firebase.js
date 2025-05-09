@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider , signInWithPopup, signOut} from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { collection } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
@@ -19,6 +20,8 @@ const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 const db = getFirestore(app);
 const eventsCollectionRef = collection(db, "events");
+const storage = getStorage(app);
+
 
 const signInWithGoogle = async () => {
   try {
@@ -40,4 +43,13 @@ const logOut = async () => {
   }
 };
 
-export { auth, provider, db, eventsCollectionRef,signInWithGoogle, logOut  };
+// Google People API için ek kapsam
+provider.addScope('openid');
+provider.addScope('https://www.googleapis.com/auth/userinfo.profile');
+provider.addScope('https://www.googleapis.com/auth/userinfo.email');
+provider.addScope('https://www.googleapis.com/auth/photoslibrary.readonly');
+
+
+// Google People API için ek kapsam
+
+export { auth, provider, db, eventsCollectionRef,signInWithGoogle, logOut,storage  };

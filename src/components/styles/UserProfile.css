@@ -1,0 +1,129 @@
+.user-profile-container{
+  padding: 16px;
+}
+.profile-section {
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+.profile-image-container {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border: 4px solid #4285f4;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-email {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.user-events-section {
+  margin-top: 40px;
+}
+
+.user-events-section h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 24px;
+}
+
+.user-event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.user-event-item{
+  padding: 15px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.user-event-item h3{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.user-event-item span{
+  font-style: italic;
+}
+.user-event-card {
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.user-event-card:hover {
+  transform: translateY(-5px);
+}
+
+.user-event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.user-event-content {
+  padding: 20px;
+}
+
+.user-event-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.user-event-description {
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.user-event-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.user-event-delete-button {
+  display: block;
+  padding: 12px;
+  color: var(--button-text-primary);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.no-events {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  padding: 30px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+}
+
+.error {
+  text-align: center;
+  color: #ff4444;
+  padding: 30px;
+}

@@ -7,7 +7,6 @@ import "./styles/Navbar.css"
 const Navbar = () => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
-  console.log(user)
 
   const handleAuth = async () => {
     if (user) {
@@ -33,6 +32,9 @@ const Navbar = () => {
         </Link>
         <Link to="/sehirler" >
           Şehirler
+        </Link>
+        <Link to="/profil" >
+          Profil
         </Link>
         <button className="navbar-button" onClick={handleAuth} >
           {user ? "Çıkış Yap" : "Google ile Giriş Yap"}

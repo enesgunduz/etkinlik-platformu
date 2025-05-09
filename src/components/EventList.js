@@ -3,6 +3,7 @@ import { db } from "../firebase";
 import { collection, onSnapshot} from "firebase/firestore";
 import { AuthContext } from "../components/AuthProvider";
 import EventCard from "./EventCard";
+import "./styles/EventList.css";
 
 const EventList = () => {
   const [events, setEvents] = useState([]);

@@ -28,7 +28,7 @@
 }
 
 .banner-button {
-  padding: 10px 20px;
+  padding: 7px 10px;
   background-color: var(--primary-color);
   color: var(--button-text-primary);
   font-size: var(--font-size-base);

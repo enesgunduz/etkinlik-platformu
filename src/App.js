@@ -7,6 +7,9 @@ import EventDetails from "./pages/EventDetails"; // Detay sayfası için yeni bi
 import NotFound from "./pages/NotFound"; // 404 sayfası ekleyeceğiz
 import AuthProvider from "./components/AuthProvider"; // AuthProvider'ı ekliyoruz
 import Navbar from "./components/Navbar"; // Navbar bileşeni
+import CreateEvent from "./components/CreateEvent";
+import EventList from "./components/EventList";
+import UserProfile from "./pages/UserProfile"; 
 
 const App = () => {
   return (
@@ -19,6 +22,9 @@ const App = () => {
 
           {/* Etkinlik Detay Sayfası */}
           <Route path="/event/:id" element={<EventDetails />} />
+          <Route path="/events/" element={<EventList />} />
+          <Route path="/etkinlik-olustur" element={<CreateEvent />} />
+          <Route path="/profil" element={<UserProfile />} />
 
           {/* 404 Sayfası */}
           <Route path="*" element={<NotFound />} />
