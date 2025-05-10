@@ -27,7 +27,7 @@ const Navbar = () => {
 
       {/* Sağdaki butonlar */}
       <div className="navbar-links">
-        <Link to="/events" >
+        <Link to="/etkinlikler" >
           Etkinlikler
         </Link>
         <Link to="/sehirler" >

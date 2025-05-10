@@ -15,10 +15,13 @@
   --button-text-secondary: #ffffff;
 
   /* Font Ayarları */
-  --font-family: "Arial", sans-serif;
+  --font-family-primary: 'Inter', sans-serif;
+  --font-family-secondary: 'Open Sans', sans-serif;
   --font-size-base: 16px;
   --font-size-sm: 14px;
   --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
   --font-weight-normal: 400;
   --font-weight-bold: 600;
 }

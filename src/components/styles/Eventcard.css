@@ -1,24 +1,27 @@
 .event-card {
+  background-color: var(--background-color);
   border: 1px solid var(--border-color);
-  background-color: var(--gray-light);
   border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  max-width: 400px;
+  padding: 5px 10px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap :15px;
 }
 
-
-.event-card h2 {
-  font-size: var(--font-size-lg);
-  color: var(--text-color);
-  margin-bottom: 10px;
+.event-image{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
+
 .event-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   color: var(--gray-dark);
   margin-bottom: 15px;
 }
@@ -48,12 +51,16 @@
 .event-button:active {
   transform: scale(0.95); /* Butona tıklandığında görsel bir tepki */
 }
-
-.event-card p{
+.event-date{
   font-size: var(--font-size-sm);
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-weight: bold;
+
 }
-.event-card .title{
-  font-size: var(--font-size-base);
+.event-location {
+  font-size: var(--font-size-sm);
+  margin-bottom: 15px;
   font-weight: bold;
 }
 .person-img{
@@ -61,6 +68,12 @@
   height:30px;
   border-radius: 50%;
 }
+.event-card .title {
+  font-size: var(--font-size-lg);
+  color: var(--text-color);
+  font-weight: bold;
+}
+
 .title a{
   text-decoration: none;
   color: var(--text-color);

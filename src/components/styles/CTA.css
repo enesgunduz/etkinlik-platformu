@@ -1,0 +1,26 @@
+.cta {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  color: var(--gray-dark);
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: var(--font-size-lg);
+}
+
+@media (max-width: 768px) {
+  .cta h2 {
+    font-size: 28px;
+  }
+  
+  .cta p {
+    font-size: var(--font-size-base);
+  }
+}

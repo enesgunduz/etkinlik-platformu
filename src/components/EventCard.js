@@ -50,15 +50,16 @@ const EventCard = ({ event,user }) => {
   return (
     <div className="event-card">
       <img src={event.imageUrl} alt="Event" className="event-image" />
+      
       <h6 className="title">
-        <Link to={`/event/${event.id}`} className="button">
+        <Link to={`/etlinlik/${event.id}`} className="button">
           {event.title}
         </Link>
       </h6>
       
       <div className="event-cart-details">
-        <p>Tarih: {event.date}</p>
-        <p>Konum: {event.location}</p>
+        <p className="event-date" >{event.date}</p>
+        <p className="event-location">{event.location}</p>
       </div>
       
       {isParticipating ? (
@@ -74,9 +75,6 @@ const EventCard = ({ event,user }) => {
       <div className="participant-list">
           {event.participants.map((e,id) => <img key={id} alt="person" src={e.photoURL || avatar} className="person-img"/> )}
       </div>
-      
-      <br />
-      <br />
     </div> 
   );
 };

@@ -21,8 +21,8 @@ const App = () => {
           <Route path="/" element={<Home/>} />
 
           {/* Etkinlik Detay Sayfası */}
-          <Route path="/event/:id" element={<EventDetails />} />
-          <Route path="/events/" element={<EventList />} />
+          <Route path="/etkinlik/:id" element={<EventDetails />} />
+          <Route path="/etkinlikler/" element={<EventList />} />
           <Route path="/etkinlik-olustur" element={<CreateEvent />} />
           <Route path="/profil" element={<UserProfile />} />
 

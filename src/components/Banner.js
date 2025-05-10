@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="banner">
-      <h1>Etkinlik Platformu</h1>
+      <h1>İlgi alanlarınıza göre etkinlikler keşfedin</h1>
       <p>
         Topluluğunu yönetmek, fiziksel veya çevrim içi etkinlikler düzenlemek
         için ihtiyacın olan her şey burada.
       </p>
       
-      <Link to="/etkinlik-olustur" className="banner-button">
-          <button className="banner-button" >Bir etkinlik oluşturun</button> 
+      <Link to="/etkinlikler" className="banner-button">
+          <button className="banner-button" >Etkinlikleri keşfetin</button> 
       </Link>
     </div>
   );
